@@ -63,7 +63,7 @@ condition = [
     rows[3][8],
     rows[4][8],
     rows[6][8]]
-conditionohshit = [
+conditionpoor = [
         "Snow",
         "Rain",
         "Rain/Wind",
@@ -84,12 +84,12 @@ if max(percentrain) < 25:
 else:
     raincheck = False
 
-if str(conditionohshit) in condition:
+if str(conditionpoor) in condition:
     conditioncheck = False
 else:
     conditioncheck = True
 
 if tempcheck and raincheck and conditioncheck:
-    print("Ride your motorcycle to work today, you silly bitch.")
+    print("Ride your motorcycle or bike to work today")
 else:
-    print("Oh hell no. You're going to be cold or wet or something you pansy ass fuckboi")
+    print("You're going to be cold or wet or something. Please refrain from cycling.")
